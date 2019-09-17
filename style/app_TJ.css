@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.w1100{
+    width: 1100px;
+    margin:0 auto;
+}
+#top{
+    height: 100px;
+    background: #fff;
+    width: 100%;
+}
+#top .top{
+  height: 100px;
+
+}
+#top .top img{
+   height: 80px;
+   display: block;
+   float: left;
+   margin-top: 14px;
+}
+#top .top>ul{
+    float: right;
+    height: 100px;
+    width: 570px;
+    list-style: none;
+}
+#top .top>ul>li{
+    float: left;
+    width: 190px;
+    height: 20px;
+    font-size:18px;
+    text-align: center;
+    margin-top: 40px;
+}
+#top .top ul li.list_one{
+    border-right:1px solid #d3d3d3;
+    position: relative;
+    
+}
+#top .top ul li.list_one:hover>a{
+    border-left:1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+}
+#top .top ul li.list_one>a span{
+    background: url(../images/app_jinglingtu_ico.png) no-repeat;
+    background-position:-106px 9px;
+    margin-left:6px;  
+}
+#top .top ul li a{
+    color: #848080;
+    text-decoration: none;
+}
+#top .top ul li.list_one>a{
+    color: #f47400;
+    border-left:1px solid transparent;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    top: -38px;
+    left: 0px;
+    width: 190px;
+}
+#top .top ul li a:hover{
+    color: #f47400;
+}
+#top .top ul li.list_one>a:hover{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    border-left:1px solid #d3d3d3;
+    border-right:1px solid #d3d3d3;
+    position: absolute;
+    top: -38px;
+    left: 0px;
+    width: 190px;
+    
+}
+#top .top ul li.list_one>a:hover span{
+    background-position: -106px -10px;
+}
+#top .top ul li.list_one ul{
+    display:none;
+    width:190px;
+    height: 100px;
+    list-style: none;
+    position: absolute;
+    top:60px;
+    left: 0;
+    line-height: 50px;
+    background: #fff;
+    z-index: 10;
+}
+#top .top ul li.list_one ul li{
+    height: 50px;
+    line-height: 50px;
+    width:190px;
+    float: left;
+}
+#top .top ul li.list_one ul li:hover{
+    background: #f47400;
+}
+#top .top ul li.list_one ul li:hover a{
+    color:#fff;
+}
+#top .top ul li.list_one:hover ul{
+    display: block;
+}
+/* 头部结束 */
+#banner{
+    width: 100%;
+    height: 660px;
+    background: #2cbafa;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+#banner .banner{
+    height: 660px;
+    position: relative;
+    display: table;
+}
+#banner .banner img{
+    display: block;
+    margin-top: 40px;
+    height: 630px;
+    position: relative;;
+    top: 0;
+    left: -40px;
+    float: left;
+}
+#banner .banner h1{
+    margin-top: 135px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 60px;
+    
+}
+#banner .banner p{
+    color: #fff;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+#banner .banner i{
+    font-style: normal;
+    display: block;
+    float: left;
+    width: 240px;
+    height: 75px;
+    margin-top: 20px;
+    background-color: #087bbd;
+    background-image: url(../images/app_jinglingtu_ico.png);
+    background-position: -65px -29px;
+    background-repeat:no-repeat; 
+}
+#banner .banner span{
+    display: block;
+    float: left;
+    width: 240px;
+    height: 75px;
+    margin-top: 20px;
+    margin-left: 5px;
+    background-color: #087bbd;
+    background-image: url(../images/app_jinglingtu_ico.png);
+    background-position: -66px -95px;
+    background-repeat:no-repeat; 
+}
+#banner .banner i:hover,#banner .banner span:hover{
+    background-color: #f47400;
+}
+#banner .banner i:hover a,#banner .banner span:hover a{
+    border-left:1px solid #fff; 
+}
+#banner .banner a{
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 12.5px;
+    font-size: 20px;
+    padding: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 65px;
+    border-left:1px solid #3995ca; 
+}
+
+#banner .erweima{
+    width: 240px;
+    height: 540px;
+    background:#2cbafa; 
+    position: absolute;
+    top: 60px;
+    right: 10px;
+   
+}
+#banner .erweima p{
+    width: 100%;
+    height: 260px;
+    margin-bottom: 20px;
+    background: #fff;
+    color: 707070;
+    text-align: center; 
+    padding:10px;
+}
+#banner .erweima p img{
+   width: 220px;
+}
+
+#content{
+    height: 900px;
+    margin-top:10px;
+    margin-bottom:10px; 
+}
+#content .content{
+    height: 900px;
+}
+#content .content h3{
+    width: 100%;
+    text-align: center;
+    color: #666666;
+    font-size: 33px;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+#content .content ul{
+    width: 100%;
+    height: 800px;
+    list-style: none;
+    border-top:1px solid #e1e1e1; 
+    border-bottom:1px solid #e1e1e1;
+}
+#content .content ul li{
+    float: left;
+    width: 550px;
+    height: 400px;
+    text-align: center;
+    padding: 30px;
+}
+
+#content .content ul li h2{
+    height: 50px;
+    color: #333;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+#content .content ul li p{
+    color: #617590;
+}
+#content .content ul li img{
+     height: 297px;
+}
+#content .content ul li:nth-of-type(1){
+    border-right:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+}
+#content .content ul li:nth-of-type(2){
+    border-bottom:1px solid #e1e1e1;
+}
+#content .content ul li:nth-of-type(3){
+    border-right:1px solid #e1e1e1;
+}
+
+#content .content ul li:nth-of-type(3) img{
+    height: 260px;
+}
+#content .content ul li:nth-of-type(4) img{
+    height: 260px;
+}
+#bottom .bottom{
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+#bottom .bottom p{
+   text-align: center;
+   color: #666666;
+}
+#bottom .bottom a{
+    color: #666;
+    text-decoration: none;
+}
+#bottom .bottom span{
+    color: #666;
+}
+
+#bottom .bottom a:hover{
+    color: #c00;
+    text-decoration: underline;
+}

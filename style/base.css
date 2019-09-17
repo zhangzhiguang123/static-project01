@@ -1,0 +1,340 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+    /* 默认有边距，都要清除 */
+    margin: 0;
+    padding: 0;
+    /*字体设置*/
+    font-size: 14px;
+    font-family: "Microsoft Yahei",sans-serif;
+   
+    /* 去掉列表的原点 */
+    list-style: none;
+    /* 默认鼠标 */
+    cursor: default;
+}
+
+/*可选*/
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+
+/*行内块元素*/
+img{
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+    vertical-align: bottom; 
+}
+input{
+    margin: 0;
+    padding: 0 0 0 5px;
+    border: 0 none;
+    outline-style: none;
+    vertical-align: bottom; 
+}
+/*行内元素*/
+a,a:active,a:visited{
+    /*下划线和颜色*/
+    text-decoration: none;
+   
+}
+
+a:hover{
+    color:#333;
+}
+
+textarea{
+    /* 边框清零 */
+    border:none;
+    /* 轮廓线清零 */
+    outline: none;
+    /* 防止文本域被随意拖拽 */
+    resize: none;
+}
+
+i{
+    /*文字样式*/
+    font-style: normal; 
+}
+
+table{
+    /*边框合并*/
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+/* 使用伪元素清除浮动 */
+.clearfix::before,
+.clearfix::after{
+    content:"";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: none;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 版心*/
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+button{
+    outline: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+#topbar{
+    width: 100%;
+    height: 30px;
+    background-color:#f7f7f7;  
+ }
+ #topbar .topbar{
+     width: 1200px;
+     height: 30px;
+     line-height: 30px;
+     margin: 0 auto;
+     
+ }
+ #topbar .topbar span{
+     float: left;
+     font-size: 14px;
+ }
+ #topbar .topbar span{
+     
+     color:#dddddd;
+ }
+ #topbar .topbar span a{
+     color: #666;
+     text-decoration: none;
+ }
+ #topbar .topbar span a:hover{
+     color: #ff6600;
+     text-decoration: underline;
+ }
+ #topbar .topbar span i a{
+     color: #ff6600;
+     font-style: normal;
+ }
+ #topbar .topbar h3{
+     float: right;
+     font-size: 14px;
+     font-weight: normal;
+     color: #666;
+ }
+ #topbar .topbar h3 a{
+     color: #666;
+     text-decoration: none;
+     padding-left: 4px;
+ }
+ #topbar .topbar h3 a:hover{
+     color: #ff6600;
+     text-decoration: underline;
+ }
+ #topbar .topbar h3 img{
+     display: block;
+     margin-top:5px;
+     float: left; 
+ }
+ /* 顶部小块部分结束 */
+ header{
+     width:100%;
+     height: 90px;
+     background: #ffffff;
+
+ }
+ header .search_box{
+     width: 1200px;
+     margin:  0 auto;
+     height: 90px;
+     line-height:90px;  
+ }
+ header .search_box a img{
+     display: block;
+     margin-top:10px; 
+     float: left;
+ }
+ header .search_box h3{
+ width: 510px;
+ height: 30px;
+ float: left;
+ margin-left: 180px;
+ border:2px solid #dddddd;
+ margin-top:30px; 
+ color: #666;
+ position: relative; 
+ }
+ header .search_box h3>input[type="text"]{
+     border:0 none;
+     outline: 0;
+     width: 410px;
+     height: 30px;
+     display: block;
+     float: left;
+     padding-left:10px;
+     margin-left:-1px; 
+     
+ }
+ header .search_box h3>input[type="text"]:focus{
+    box-shadow: 3px 3px 2px #ddd inset;  
+ }
+ header .search_box h3 button{
+     background: transparent;
+     background-color: #ff6600;
+     outline: 0;
+     width: 90px;
+     height: 30px;
+     display: block;
+     float: left;
+     color:white;
+     border:0 none;
+     margin-left:1px;
+     position: absolute;
+     right: -0.5px;
+     bottom: 0;  
+ }
+ header .search_box i{
+     display: block;
+     float: left;
+     width: 150px;
+     height: 35px;
+     background: #f7f7f7;
+     color: #666;
+     margin-top: 29px;
+     margin-left: 130px;
+     line-height: 35px;
+     border: 1px solid #dddddd;
+     font-style: normal;
+     cursor: pointer;
+     font-size: 14px;
+     text-align: center;
+     position: relative;
+ }
+ header .search_box i a{
+     color: #666;
+     text-decoration: none;
+ }
+ header .search_box i a:hover{
+     color: #ff6600;
+     
+ }
+ header .search_box i b{
+     width: 30px;
+     color: #666;
+ }
+ header .search_box i:before{
+     content:"";
+     display: block;
+     width:0;
+     height:0;
+     border-width: 10px;
+     border-style: solid;
+     border-color: transparent transparent transparent #ff6600;
+     position: absolute;
+     top: -11px;
+     left: 27px;
+ }
+ header .search_box i::after{
+     display: block;
+     content: "0";
+     height: 20px;
+     width: 20px;
+     background: #ff6600;
+     line-height: 20px;
+     border-radius:6px;
+     color: #dddddd; 
+     position: absolute;
+     top: -16px;
+     left: 27px;
+ }
+
+
+
+
+ footer{
+    width: 1200px;
+    height: 190px;
+    margin: 10px 6px 6px 0;
+    background: green;
+}
+
+footer ul{
+    list-style: none;
+    width: 1200px;
+    height: 100%;
+    background: #FFFFFF;
+}
+footer ul li{
+    float: left;
+    width: 200px;
+    position: relative;
+    margin-left:35px; 
+}
+footer ul li .bac{
+    width: 40px;
+    height: 40px;
+    background:url(../images/tubiao.png);
+    position: absolute;
+    top: 22px;
+    left: 13px;
+   
+}
+footer ul li dl{
+     width: 140px;
+     float: right;
+     height: 190px;
+
+}
+footer ul li dl dt{
+    font-size: 14px;
+    color: black;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+footer ul li dl dd{
+    line-height: 20px;
+    
+}
+footer ul li dl dd a{
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer ul li dl dd a:hover{
+    color: #ff6600;
+}
+/* 底部 */
+#bottom{
+    width: 1200px;
+    height: 90px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top:30px; 
+}
+#bottom p{
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+#bottom p a{
+    color: #333333;
+    text-decoration: none;
+}
+#bottom p a:hover{
+    color: #ff6600;   
+}

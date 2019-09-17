@@ -1,0 +1,748 @@
+
+/* 顶部小块部分 */
+#topbar{
+   width: 100%;
+   height: 30px;
+   background-color:#f7f7f7;  
+}
+#topbar .topbar{
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    
+}
+#topbar .topbar span{
+    float: left;
+    font-size: 14px;
+}
+#topbar .topbar span{
+    
+    color:#dddddd;
+}
+#topbar .topbar span a{
+    color: #333333;
+    text-decoration: none;
+}
+#topbar .topbar span a:hover{
+    color: #ff6600;
+}
+#topbar .topbar span i a{
+    color: #ff6600;
+    font-style: normal;
+}
+#topbar .topbar h3{
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+}
+#topbar .topbar h3 a{
+    color: #333333;
+    text-decoration: none;
+    
+}
+#topbar .topbar h3 a:hover{
+    color: #ff6600;
+}
+#topbar .topbar h3 img{
+    display: block;
+    margin-top:5px;
+    float: left; 
+}
+/* 顶部小块部分结束 */
+header{
+    width:100%;
+    height: 90px;
+    background: #ffffff;
+ 
+}
+header .search_box{
+    width: 1200px;
+    margin:  0 auto;
+    height: 90px;
+    line-height:90px;    
+}
+header .search_box a img{
+    display: block;
+    margin-top:10px; 
+    float: left;
+}
+header .search_box h3{
+width: 500px;
+height: 30px;
+float: left;
+margin-left: 180px;
+border:2px solid #dddddd;
+margin-top:30px;  
+}
+header .search_box h3>input[type="text"]{
+    border: 0 none;
+    outline: 0;
+    width: 410px;
+    height: 30px;
+    display: block;
+    float: left;
+    padding-left: 10px;
+}
+header .search_box h3>input[type="text"]:focus{
+    box-shadow: 3px 3px 2px #ddd inset; 
+ }
+header .search_box h3 button{
+    background: transparent;
+    background-color: #ff6600;
+    outline: 0;
+    width: 80px;
+    height: 30px;
+    display: block;
+    float: left;
+    color:white;
+    border:0 none; 
+}
+header .search_box i{
+    display: block;
+    float: left;
+    width: 150px;
+    height: 35px;
+    background: #f7f7f7;
+    color: #333333;
+    margin-top: 29px;
+    margin-left: 150px;
+    line-height: 35px;
+    border: 1px solid #dddddd;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+header .search_box i a{
+    color: #333333;
+    text-decoration: none;
+}
+header .search_box i a:hover{
+    color: #ff6600;
+    
+}
+header .search_box i b{
+    width: 30px;
+    color: #333333;
+}
+header .search_box i:before{
+    content:"";
+    display: block;
+    width:0;
+    height:0;
+    border-width: 10px;
+	border-style: solid;
+    border-color: transparent transparent transparent #ff6600;
+    position: absolute;
+    top: -11px;
+    left: 27px;
+}
+header .search_box i::after{
+    display: block;
+    content: "0";
+    height: 20px;
+    width: 20px;
+    background: #ff6600;
+    line-height: 20px;
+    border-radius:6px;
+    color: #dddddd; 
+    position: absolute;
+    top: -16px;
+    left: 27px;
+}
+nav{
+    width: 100%;
+    height: 50px;
+}
+nav ul{
+    list-style: none;
+    width: 1200px;
+    margin: 0 auto;
+}
+nav ul li.all_kinds{
+    text-align: center;
+    width: 140px;
+    color: #ffffff;
+    float: left;
+    font-size: 16px;
+    font-weight: 200;
+    height: 50px;
+    line-height: 50px;
+    background: #ff6600;
+}
+nav ul li{
+    float: left;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 800;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+nav ul li a{
+    color: #333333;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    color: #ff6600;
+}
+
+
+
+/* banner部分 */
+
+#banner{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+#banner .lunbo{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+   
+}
+#banner .lunbo ul{
+    list-style: none;
+    width: 1920px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto; 
+    position: relative;
+}
+#banner .lunbo ul li{
+    float: left;
+    width: 0;
+    height: 0;
+    transition:all .5s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+#banner .lunbo ul li img{
+    width: 100%;
+    height: 100%;
+}
+#banner .lunbo ul li.now{
+    width: 1920px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+#banner .lunbo div.smallcircle dl{
+    list-style: none;
+    width: 200px;
+    height:20px;
+    position: absolute;
+    top: 370px;
+    left: 48%; 
+}
+#banner .lunbo div.smallcircle dl dt{
+    display: block;
+    margin-left:20px; 
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    background-color:grey;
+   
+}
+#banner .lunbo div.smallcircle dl dt:hover{
+    background-color:white;
+    box-shadow:0 0 2px rgba(0, green, blue, 0.2);
+    transition: all 1s;
+}
+#banner .lunbo div.smallcircle dl dt.moren{
+    background-color:white;
+    transition: all .5s;
+}
+#banner .lunbo div.smallcircle dl #circle04{
+    display: none;
+}
+
+#banner .menu {
+    width: 1200px;
+    height: 0px;
+    margin: 0 auto;
+}
+#banner .menu ul{
+    list-style: none;
+    background:rgba(0, 0, 0, 0.8);
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+}
+#banner .menu ul li{
+    height: 50px;
+    padding-left:20px;
+    line-height:50px;
+    
+}
+#banner .menu ul li:hover{
+    background: #ff6600;
+}
+#banner .menu ul li i{
+    float: right;
+    color: white;
+}
+#banner .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#banner .menu ul li .submenu{
+    height: 360px;
+    background: rgba(255, 255, 255, 0);
+    width: 760px;
+    position: absolute;
+    top:0;
+    visibility: hidden;
+    left: 200px;
+    color: #7f7e7e;
+    opacity: 0;
+    
+    padding: 20px;
+}
+#banner .menu ul li:hover .submenu{
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    visibility: visible;transition: all .7s ease;
+}
+#banner .menu ul li .submenu h3{
+   
+   width: 100%;
+   height: 55px;
+   border-bottom: 1px solid black;
+   line-height:55px;
+}
+
+#banner .menu ul li .submenu h3 a.move{
+    color: #333333;
+    line-height: 55px;
+    display: block;
+    float: left;
+    font-size: 14px;
+}
+
+#banner .menu ul li .submenu h3 img{
+    display: block;
+    opacity: 0.8;
+    float: left;
+    width: 40px;
+    position: relative;
+    bottom: -10px;
+}
+#banner .menu ul li .submenu h3 b{
+    display: block;
+    margin-left:3px;
+    float: left;
+    transition: all 1s ease;
+     
+}
+#banner .menu ul li .submenu h3 a.move:hover b{
+    margin-left:23px;
+}
+#banner .menu ul li .submenu h3 a{
+    float: right;
+    color: #666666;
+    font-weight: 200;
+    font-size: 16px;
+}
+#banner .menu ul li .submenu h3 a i{
+    color: #666666;
+    font-style: normal;
+    margin-left:7px; 
+}
+#banner .menu ul li .submenu p{
+    width: 100%;
+    height: 400px;
+    line-height: 30px;
+}
+#banner .menu ul li .submenu p a {
+    color: #7f7e7e;
+    font-size: 12px;
+    padding: 0 8px;
+    margin-top: 5px;
+    line-height: 25px;
+}
+#banner .menu ul li .submenu p a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+/* content部分 */
+ #content{
+    background: url(../images/bgbigtu.jpg);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#content .goods_box{
+    width: 1200px;
+    margin: 0 auto;
+}
+#content .goods_box p{
+    width: 1200px;
+    margin-top:10px; 
+}
+#content .goods_box p img{
+    width: 296px;
+}
+#content .goods_box h3{
+    width: 1200px;
+    height: 80px;
+    background: #fff;
+    margin: 5px 0;
+}
+#content .goods_box h3 ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+#content .goods_box h3 ul li.title_0{
+    
+    font-size:26px;
+    line-height: 80px;
+    float: left;
+    font-weight: 800;
+    padding: 0 26px;
+
+}
+#content .goods_box h3 ul li.title_0 a{
+    color:#333333;
+    text-decoration: none;
+}
+#content .goods_box h3 ul li.title_0 a:hover{
+    color:#333333;
+    text-decoration: none;
+}
+#content .goods_box h3 ul li{
+    float: right;
+    font-size: 14px;
+    line-height: 80px;
+    font-weight:normal;
+}
+#content .goods_box h3 ul li a{
+    color: #333333;
+    padding: 0 14px;
+    text-decoration: none;
+}
+#content .goods_box h3 ul li a:hover{
+    color: #ff6600;
+}
+
+#content .goods_box .goods{
+    width: 1207px;
+    height: auto;
+}
+#content .goods_box .goods ul{
+    list-style: none;
+    margin-left:2px; 
+}
+#content .goods_box .goods ul li{
+    width: 291px;
+    background: #fff;
+    height:420px;
+    margin:10px 10px 10px 0px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#content .goods_box .goods ul li:hover{
+    opacity: 0.9;
+    box-shadow: 0 0 10px #333;
+
+}
+#content .goods_box .goods ul li h2{
+    height: 290px;
+    background: #fff;
+    width: 100%;
+}
+#content .goods_box .goods ul li h2 img{
+    width: 290px;
+    height: auto;
+    margin-top:0px;
+}
+#content .goods_box .goods ul li h3{
+    width: 290px;
+}
+#content .goods_box .goods ul li h3 p{
+   font-size:14px;
+   line-height: 24px;
+   font-weight: normal;
+   padding: 0 8px; 
+}
+#content .goods_box .goods ul li h3 p a{
+    color: #333333;
+    text-decoration: none;
+}
+#content .goods_box .goods ul li h3 p a:hover{
+    color: #ff6600;
+}
+#content .goods_box .goods ul li h3 span{
+    display: block;
+    font-size:12px;
+    line-height: 20px;
+    font-weight: normal;
+    padding: 0 8px; 
+    height: 24px;
+}
+#content .goods_box .goods ul li h3 span a{
+    color: #999999;
+    text-decoration: none;
+}
+#content .goods_box .goods ul li h3 i{
+    float: left;
+    margin: 0 10px 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+    font-style: normal;
+    line-height: 35px;
+    
+}
+
+#content .goods_box .goods ul li  b{
+    background: #ff6600;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 2px 5px;
+    margin-right: 3px;
+    line-height: 35px;
+    margin-left: 100px;
+    
+}
+#content .goods_box .goods ul li  u{
+    margin: 0 10px 0 0;
+    color: #333;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 12px;
+}
+#content .goods_box .goods ul li h4{
+    height: 30px;
+    padding: 0 8px;
+    color: #666;
+    line-height: 30px;
+    font-weight:normal;
+    font-size: 12px;
+}
+#content .goods_box p a.guanggao2 img{
+    width: 100%;
+    height: auto;
+}
+
+
+#friends{
+    width: 1180px;
+    height: auto;
+    background: #fff;
+    margin: 10px auto;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+#friends h2{
+    
+    width: 1200px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    color: #3a3440;
+    border-bottom: 1px solid #f1f1f1;
+}
+#friends a img{
+    display: block;
+    height: 30px;
+    width:90px;
+    float: left;
+    margin: 10px 6px 6px 0;
+    border: 1px solid #eed9c9;
+} 
+
+
+footer{
+    width: 1200px;
+    height: 190px;
+    margin: 10px 6px 6px 0;
+    background: green;
+}
+
+footer ul{
+    list-style: none;
+    width: 1200px;
+    height: 100%;
+    background: #FFFFFF;
+}
+footer ul li{
+    float: left;
+    width: 200px;
+    position: relative;
+}
+footer ul li .bac{
+    width: 40px;
+    height: 40px;
+    background:url(../images/tubiao.png);
+    position: absolute;
+    top: 22px;
+    left: 13px;
+   
+}
+footer ul li dl{
+     width: 140px;
+     float: right;
+     height: 190px;
+
+}
+footer ul li dl dt{
+    font-size: 14px;
+    color: black;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+footer ul li dl dd{
+    line-height: 20px;
+    
+}
+footer ul li dl dd a{
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer ul li dl dd a:hover{
+    color: #ff6600;
+}
+/* 底部 */
+#bottom{
+    width: 1200px;
+    height: 90px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top:30px; 
+}
+#bottom p{
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+#bottom p a{
+    color: #333333;
+    text-decoration: none;
+}
+#bottom p a:hover{
+    color: #ff6600;   
+}
+
+/* 固定栏 */
+.Fixed{
+    width:226px;
+    height: 326px;
+    position: fixed;
+    top:100px;
+    right:-226px;
+    background: #FFF;
+    transition: all .5s ease;
+}
+.Fixed h2{
+    height: 30px;
+    line-height: 30px;
+    background: #f6f6f6;
+    width: 100%;
+    color: #626262;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 5px;
+}
+.Fixed ul{
+    margin-top: 15px;
+    margin-left: 10px;
+    list-style: none;
+    width: 100%;
+    height: 267px;
+    background: #FFF;
+}
+.Fixed ul li{
+    display: block;
+    width: 80px;
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    padding: 0 10px;
+    border-radius:3px;
+    text-align: center;
+    margin: 0 6px;
+    background: url(../images/fixed_jinglingtu_icons.png) no-repeat;
+    position: relative;
+}
+.Fixed ul li a{
+    display: block;
+    width: 80px;
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    border-radius:3px;
+    text-align: center;
+    margin-left:10px;
+    padding-left: 15px;
+    position: absolute;
+    top:0px;
+    left: -10px;
+    color: rgb(86, 86, 86);
+     
+}
+.Fixed ul li:hover{
+   
+    background:#f6f6f6 url(../images/fixed_jinglingtu_icons.png) no-repeat;
+}
+.Fixed p{ 
+    width: 100%;
+    height: 30px;
+    background-color: #f6f6f6;
+    line-height: 30px;
+    color: rgb(86, 86, 86);
+    display: block;
+    background-image: url(../images/fixed_jinglingtu_icons.png);
+    background-repeat: no-repeat;
+   
+}
+.Fixed p a{
+    color: rgb(86, 86, 86);
+    float:left;
+    margin-left: 175px;
+}
+.Fixed p a:hover{
+   color: blue;
+}
+
+.Fixed::after{
+    content: "分享";
+    display: block;
+    width: 25px;
+    height: 65px;
+    color: #FFFFFF;
+    font-weight:800px;
+    font-size: 16px;
+    background: #feb252;
+    position: absolute;
+    text-align: center;
+    top:60px;
+    left: -25px;
+    padding-top:22px;
+    border-radius: 2px;
+}
+.Fixed:hover{
+    right: 0;
+}

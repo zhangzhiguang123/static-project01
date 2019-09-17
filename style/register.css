@@ -1,0 +1,344 @@
+.mengceng{
+    width: 100%;
+    height: auto;
+
+}
+
+#topbar .topbar h3 a.one:hover{
+    text-decoration: none;
+    color: #666;
+}
+#topbar .topbar h3 a.two{
+    color: #ff6600;
+}
+#topbar .topbar h3 a.two:hover{
+    color: #ff6600;
+}
+#topbar .topbar .search_top{
+    width: 600px;
+    height:30px;
+    line-height: 30px;
+    float: left;
+}
+#topbar .topbar .search_top p{
+    width: 420px;
+    height:24px;
+    line-height: 23px;
+    float: left;
+    background: #888888;
+    margin-top:3px;
+    text-align: center;
+    color: white; 
+    border:1px solid #dddddd;
+    font-size: 16px;
+    box-sizing: border-box;
+    
+}
+#topbar .topbar .search_top p input[type="text"]{
+    height: 20px;
+    display: block;
+    float: left;
+    width: 350px;
+    margin: 1px;  
+  box-sizing: border-box;
+}
+#topbar .topbar .search_top a{
+    display: block;
+    font-size: 14px;
+    color: #ff6600;
+    float: left;
+    height:30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+/* topbar over */
+#head_ad{
+    width: 100%;
+    height: 103px;
+    background: white;
+}
+#head_ad .head_ad{
+   height: 100px;
+   overflow: hidden;
+}
+#head_ad .head_ad a img{
+    display: block;
+    float: left;
+    height:97px;
+    width: auto;
+    padding: 1px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#head_ad .head_ad a img.imgtwo{
+   height: 80px;
+    width: auto;
+    padding: 1px;
+    margin: 20px 17px 5px 20px;
+}
+#head_ad .head_ad a img.imgone{
+    height: 80px;
+     width: auto;
+     padding: 1px;
+     margin: 20px 17px 5px 20px;
+ }
+#nav{
+    width: 100%;
+    background: #374654;
+    height: 56px;
+    margin-top:5px;
+    background: url(../images/regi_header_bg.png);
+}
+#nav .nav{
+    background: #2c4053;
+    height: 56px;
+    line-height: 56px;
+}
+
+#nav .nav ul{
+    height: 20px;
+}
+#nav .nav ul li{
+    float: left;
+    padding: 0 14px;
+    border-right:1px solid #283641;
+    border-left: 1px solid  #40515e;
+    margin-right: 1px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 19px;
+}
+
+#nav .nav ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight:bold; 
+}
+#nav .nav ul li a:hover{
+    color: #fff;
+}
+
+
+#regi_main{
+    width: 100%;
+    height: 520px;
+}
+
+
+#regi_main .regi_main{
+    margin-top: 10px;
+    height: 520px;
+    border:1px solid #cecece;
+    width: 1200px;
+    position: relative;
+}
+
+#regi_main .regi_main p.first{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+#regi_main .regi_main p b.user{
+    display: block;
+    width: 300px;
+    float: left;
+    padding: 0 10px 0 10px;
+    height: 35px;
+    line-height: 35px;
+}
+
+#regi_main .regi_main p a{
+    display: block;
+    color:#ff0000;
+    padding: 0 10px 0 10px;
+    float: right;
+}
+#regi_main .regi_main p a:hover{
+    text-decoration: underline;
+}
+#regi_main .regi_main .tel_qq{
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff4200;
+    text-align: left;
+    position: absolute;
+    right: 8px;
+    top: 30px;
+    line-height: 24px;
+    width: 150px;
+    display: none;
+}
+
+#regi_main .regi_main form p{
+    padding: 20px 0 0 24px;
+    color:#333;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+
+#regi_main .regi_main form input[type="radio"]{
+    display: block;float: left;
+    margin: 13px 15px 0 24px;
+}
+#regi_main .regi_main form>img{
+    display: block;
+    float: left;
+    
+}
+#regi_main .regi_main form img.red_border{
+    border:1px solid #ff4200;
+}
+#regi_main .regi_main form ul{
+    height: 400px;
+}
+#regi_main .regi_main form ul li{
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    box-sizing:border-box;
+    padding:0 0px 0px 30px;
+    position: relative;
+}
+#regi_main .regi_main form ul li strong{
+    padding:0 3px 0 0;
+    border:1px solid #9db5ca;
+}
+#regi_main .regi_main form ul li i{
+    color: #333;
+}
+#regi_main .regi_main form ul li i span{
+    color: #ff6600;
+}
+#regi_main .regi_main form ul li input[type="text"]{
+    border: 1px solid #cccccc;
+    box-sizing:border-box;
+    width: 230px;
+    height: 30px;
+    position: absolute;
+    top:3px;
+    left:250px;
+}
+#regi_main .regi_main form ul li b{
+    color:#999999;
+    font-weight: normal;
+    font-size:14px;
+}
+#regi_main .regi_main form ul li em{
+    font-style: normal;
+    color: #ff003b;
+    margin-left: 142px;
+}
+#regi_main .regi_main form ul li img{
+    position: absolute;
+    top:12px;
+    left: 686px;
+}
+#regi_main .regi_main form ul li b{
+    position: absolute;
+    top:1px;
+    left: 686px;
+}
+#regi_main .regi_main form ul li button.butone{
+    height: 21px;
+    line-height: 21px;
+    background: #f0f0f0;
+    color: #444444;
+    border: 0 none;
+    outline: 0;
+    margin-left: 250px;
+}
+#regi_main .regi_main form ul li:nth-child(10){
+    height: 50px;
+    line-height: 50px;
+    padding: 1px;
+    position: relative;
+}
+#regi_main .regi_main form ul li:nth-child(10) input[type="checkbox"]{
+   
+    display: block;
+    margin: 19px 5px 0 50px;
+    float: left;
+    background: white;
+    border: 1px solid #696969;
+}
+#regi_main .regi_main form ul li:nth-child(10) input[type="image"]{
+    display: block;
+    float: left;
+    position: absolute;
+    top:7px;
+    left: 330px;
+}
+#regi_main .regi_main form ul li:nth-child(10) b.sss{
+    left:606px;
+}
+#regi_main .regi_main form ul li:nth-child(10) button{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    text-align: center;
+    border: 0 none;
+    background: #eee;
+    color: #666666;
+    position: absolute;
+    top:10px;
+    left:686px;
+}
+#regi_main .regi_main form ul li:nth-child(11) u{
+    text-decoration: none;
+    float: right;
+    color: #999999;
+    padding-right:10px; 
+}
+#bottom{
+    position: relative;
+}
+#bottom p a:hover{
+    text-decoration: underline;
+}
+#bottom img.one{
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    width: 100px;
+}
+.jump_box{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #464646;
+    background-color: #fff;
+    position: absolute;
+    right: 140px;
+    bottom: -30px;
+    display: none;
+    z-index:1000;
+    
+}
+.jump_box h2{
+    padding-top:7px; 
+    padding-right:10px; 
+    float: right;
+    color: #666;
+    font-size: 16px;
+}
+.jump_box h2:hover{
+    
+    cursor: pointer;
+    color: #ff6600;
+   
+}
+
+.jump_box img{
+    display: block;
+    padding: 30px 0 0 50px;
+}
+
+.moren{
+    background-color:#000;
+    opacity: 0.4;
+    position: relative;
+    z-index: 5;
+}

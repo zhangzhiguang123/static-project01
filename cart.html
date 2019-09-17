@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>我的购物车-牛摩网</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/cart.css" type="text/css">
+    <meta name="keywords" content="我的购物车" />
+    <meta name="description" content="我的购物车">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="topbar">
+        <div class="topbar">
+            <span><a href="index.html">返回牛摩网 </a>&nbsp;|&nbsp;<i><a href="#"> 牛摩网VIP商家抢驻>></a></i></span>
+            <h3>
+                <img src="images/top_shoujitubiao.png" alt=""><a href="app_TJ.html">APP</a>&emsp;&emsp; 欢迎来到牛摩网商城！<a
+                    href="login.html">[登录]</a>&nbsp;<a href="register.html">[免费注册]</a>
+            </h3>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <!---------------- 顶部小块部分结束 --------------------->
+    <header>
+        <div class="search_box">
+            <a href="#"><img src="images/logo_shop.jpg" height="60px" alt=""></a>
+            <h3>
+                <input type="text" placeholder="请输入要搜索的关键字" id="search_bu"><a href="list.html"
+                    onclick="if (clickDian(search_buObj)==false) return false"><button>搜索</button></a>
+            </h3>
+            <i><b class="iconfont icon-gouwuche"></b><a href="#">去购物车结算</a><span
+                    class="iconfont icon-icon-up"></span></i>
+        </div>
+    </header>
+    <!-- 头部结束 -->
+    <div id="nav">
+        <div class="nav w clearfix">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li class="moren"><a href="#">摩托车</a></li>
+                <li><a href="#">电动车</a></li>
+                <li><a href="#">骑士装备</a></li>
+                <li><a href="#">装饰养护</a></li>
+                <li><a href="#">零部件</a></li>
+                <li><a href="#">实体服务</a></li>
+                <li><a href="#">汽油机相关</a></li>
+            </ul>
+            <ol>
+                <li><a href="#">众筹</a></li>
+                <li><a href="#">惠买车</a></li>
+                <li><a href="#">补拍余额</a></li>
+                <li><a href="#">网购交流</a></li>
+            </ol>
+        </div>
+    </div>
+    <!-- 导航结束 -->
+    <!-- 购物车开始 -->
+    <div class="top_img w clearfix">
+        <img src="images/cart_nav-step1.gif" alt="">
+        <img src="images/cart_nav-cart2.gif" alt="">
+    </div>
+    <div id="cart_lists">
+        <div class="cart_lists w">
+            <dl>
+                <dt>
+                    <ul>
+                        <li style="width: 72px;">选择</li>
+                        <li style="width: 480px;">商品</li>
+                        <li style="width: 120px;">数量</li>
+                        <li style="width: 108px;">商品订金</li>
+                        <li style="width: 120px;">商品单价</li>
+                        <li style="width: 114px;">应付订金</li>
+                        <li style="width: 150px;">商品总价</li>
+                        <li style="width: 34px; border-right:none;">操作</li>
+                    </ul>
+                </dt>
+                <dd>
+                    <ul id="first_ul">
+                        <li><input type="checkbox" checked></li>
+                        <li><a class="goods_img" href="#"><img src="images/cart_goods00.png" alt=""></a><a href="#">哈雷
+                                旗舰滑翔</a></li>
+                        <li><button class="buttonl">-</button><input value="1" class="buy_number"
+                                id="buy_number"><button class="buttonl">+</button></li>
+                        <li>￥50,000.00</li>
+                        <li>￥480,000.00</li>
+                        <li class="money">￥50,000.00</li>
+                        <li class="money">￥480,000.00</li>
+                        <li><a herf="#">删除</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <ul id="second_ul">
+                        <li><input type="checkbox" checked></li>
+                        <li><a href="#"><img src="images/cart_goods01.jpg" alt=""></a><a href="#">CF400J-2</a></li>
+                        <li><button class="buttonl">-</button><input value="1" class="buy_number"
+                                id="buy_number1"><button class="buttonl">+</button></li>
+                        <li>￥2,000.00</li>
+                        <li>￥9,998,000.00</li>
+                        <li class="money">￥2,000.00</li>
+                        <li class="money">￥9,998,000.00</li>
+                        <li><a herf="#">删除</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <ul id="third_ul">
+                        <li><input type="checkbox" checked></li>
+                        <li><a href="#"><img src="images/cart_goods02.jpg" alt=""></a><a href="#">全新大贸本田 金翼1800 Gold
+                                Wing</a></li>
+                        <li><button class="buttonl">-</button><input value="1" class="buy_number"
+                                id="buy_number2"><button class="buttonl">+</button></li>
+                        <li>￥200,000.00</li>
+                        <li>￥398,000.00</li>
+                        <li class="money">￥200,000.00</li>
+                        <li class="money">￥398,000.00</li>
+                        <li><a herf="#">删除</a></li>
+                    </ul>
+                </dd>
+                <div style="clear: both"></div>
+                <p><span id="zongjia">总计:￥10,876,000.00</span><b>应付金额:</b><i
+                        id="yingfu">￥252,000.00</i><button>去结算</button><a href="#"> 继续购物 >></a> </p>
+            </dl>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 友情链接开始 -->
+    <footer class="w" style="margin-top: 30px;border-top:1px solid #eee;">
+        <ul class="clearfix" style="border-bottom:1px solid #f1f1f1;">
+            <li>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <div class="bac" style="background-position:0 -58px"></div>
+            </li>
+            <li>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="#">物流配送</a></dd>
+                    <dd><a href="#">快递配送</a></dd>
+                    <dd></dd>
+                    <dd></dd>
+                </dl>
+                <div class="bac" style="background-position:-52px -58px"></div>
+            </li>
+            <li>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                    <dd><a href="#">汇款转账</a></dd>
+                    <dd></dd>
+                </dl>
+                <div class="bac" style="background-position:0 -105px"></div>
+            </li>
+            <li>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">退货换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <div class="bac" style="background-position:-52px -105px"></div>
+            </li>
+            <li>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="#">牛摩网担保</a></dd>
+                    <dd><a href="#">牛摩网服务商</a></dd>
+                    <dd></dd>
+                    <dd></dd>
+                </dl>
+                <div class="bac" style="background-position:0 -152px"></div>
+            </li>
+        </ul>
+    </footer>
+    <!-- 底部 -->
+    <div style="clear: both"></div>
+    <div id="bottom" class="w">
+        <p><a href="">牛摩网简介</a> | <a href="">业务介绍</a> | <a href="">联系我们</a> | <a href="">关于牛摩联盟</a> <a href=""
+                style="color: #ff6600;">摩托车商家</a> <a href="#" style="color: #ff6600;">转型升级之路</a></p>
+        <p>CopyRight © 2012,All Rights Reserved 版权所有 深圳市牛摩网科技商务有限公司</p>
+        <p>备案/许可证编号：粤ICP备11020761号</p>
+    </div>
+    <!-- 底部结束 -->
+    <script>
+        window.onload = function () {
+            var prc1 = 480, prc2 = 9998, prc3 = 398, zong = 10876, ying = 252;
+            var M1 = 50, M2 = 2, M3 = 200;
+            var liObj = document.getElementsByClassName("money");
+            var btn = document.getElementsByClassName('buttonl');
+            var inpu = document.getElementsByClassName('buy_number');
+            var zongjiaObj = document.getElementById("zongjia");
+            var yingfuObj = document.getElementById("yingfu");
+            var index1 = [0, 2, 4];
+            var index2 = [1, 3, 5];
+            var index3 = [0, 1, 2];
+                    function aaac(){
+                    zong = prc1 + prc2 + prc3;
+                    ying = M1 + M2 + M3;
+                    zongjiaObj.innerText = "总计:￥" + zong + ",000.00";
+                    yingfuObj.innerText = "￥" + ying + ",000.00"; 
+                    }
+            for (var i = 0; i < 3; i++) {
+                btn[index1[i]].io = i;
+                btn[index1[i]].onclick = function () {
+                    if (inpu[this.io].value == 1) {
+                        alert("您最少要购买一辆！");
+                    }
+                    else {
+                        inpu[this.io].value--;
+                        if (this.io == 0) {
+                            M1 = 50 * (inpu[this.io].value);
+                            prc1 = 480 * (inpu[this.io].value);
+                            liObj[0].innerHTML = "￥" + M1 + ",000.00";
+                            liObj[1].innerHTML = "￥" + prc1 + ",000.00";
+
+                        }
+                        if (this.io == 1) {
+                            M2 = 2 * (inpu[this.io].value);
+                            prc2 = 998 * (inpu[this.io].value);
+                            liObj[2].innerHTML = "￥" + M2 + ",000.00";
+                            liObj[3].innerHTML = "￥" + prc2 + ",000.00";
+
+                        }
+                        if (this.io == 2) {
+                            M3 = 200 * (inpu[this.io].value);
+                            prc3 = 398 * (inpu[this.io].value);
+                            liObj[4].innerHTML = "￥" + M3 + ",000.00";
+                            liObj[5].innerHTML = "￥" + prc3 + ",000.00";
+                        }
+                        // zong = prc1 + prc2 + prc3;
+                        // ying = M1 + M2 + M3;
+                        // zongjiaObj.innerText = "总计:￥" + zong + ",000.00";
+                        // yingfuObj.innerText = "￥" + ying + ",000.00";
+                        aaac();
+                    }
+                }
+            }
+            for (var j = 0; j < 3; j++) {
+                btn[index2[j]].ioo = j;
+                btn[index2[j]].onclick = function () {
+                    inpu[this.ioo].value++;
+                    if (this.ioo == 0) {
+                        M1 = 50 * (inpu[this.ioo].value);
+                        prc1 = 480 * (inpu[this.ioo].value);
+                        liObj[0].innerHTML = "￥" + M1 + ",000.00";
+                        liObj[1].innerHTML = "￥" + prc1 + ",000.00";
+                        
+                    }
+
+                    if (this.ioo == 1) {
+                        M2 = 2 * (inpu[this.ioo].value);
+                        prc2 = 998 * (inpu[this.ioo].value);
+                        liObj[2].innerHTML = "￥" + M2 + ",000.00";
+                        liObj[3].innerHTML = "￥" + prc2 + ",000.00";
+                
+                    }
+
+                    if (this.ioo == 2) {
+                        M3 = 200 * (inpu[this.ioo].value);
+                        prc3 = 398 * (inpu[this.ioo].value);
+                        liObj[4].innerHTML = "￥" + M3 + ",000.00";
+                        liObj[5].innerHTML = "￥" + prc3 + ",000.00";
+                    }      
+                     aaac();  
+                    
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
